@@ -1,0 +1,45 @@
+{
+  "name": "thx",
+  "version": "0.0.0",
+  "description": "Get a random way to show your gratitude in different languages",
+  "license": "MIT",
+  "repository": "gillstrom/thx",
+  "author": {
+    "name": "Andreas Gillström",
+    "email": "andreasgillstrom@gmail.com",
+    "url": "github.com/gillstrom"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "arr",
+    "array",
+    "json",
+    "language",
+    "list",
+    "thank",
+    "thanks",
+    "thank you",
+    "thx"
+  ],
+  "dependencies": {
+    "unique-random-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "mocha"
+    ]
+  }
+}
