@@ -1,8 +1,9 @@
 'use strict';
 var list = require('./list.json');
+var uniqueRandomArray = require('unique-random-array');
 
 module.exports = function () {
-	return require('unique-random-array')(list)();
+	return uniqueRandomArray(list)();
 };
 
 module.exports.all = list;

@@ -1,12 +1,13 @@
-'use strict';
-var assert = require('assert');
-var thx = require('./');
+import test from 'ava';
+import fn from './';
 
-it('should return an array', function () {
-	assert.strictEqual(Array.isArray(thx.all), true);
+test('should return an array', t => {
+	t.is(Array.isArray(fn.all), true);
+	t.end();
 });
 
-it('should return a random string from the list', function () {
-	assert.strictEqual(typeof thx(), 'string');
-	assert.strictEqual(thx.all.indexOf(thx()) !== -1, true);
+test('should return a random string from the list', t => {
+	t.is(typeof fn(), 'string');
+	t.is(fn.all.indexOf(fn()) !== -1, true);
+	t.end();
 });
