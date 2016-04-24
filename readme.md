@@ -13,7 +13,7 @@ $ npm install --save thx
 ## Usage
 
 ```js
-var thx = require('thx');
+const thx = require('thx');
 
 thx();
 //=> 'tusen tack'
